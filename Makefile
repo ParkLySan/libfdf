@@ -1,3 +1,14 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: litoulza <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/04/23 17:08:08 by litoulza          #+#    #+#              #
+#    Updated: 2018/04/23 17:45:34 by litoulza         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
 .PHONY: all, $(NAME), clean, fclean, re
 
@@ -20,7 +31,7 @@ SRC_PATH = ./srcs/
 
 OBJ_NAME = $(SRC_NAME:.c=.o)
 INC_NAME = fdf.h
-SRC_NAME = main.c functions.c reader.c drawer.c
+SRC_NAME = main.c functions.c reader.c drawer.c mouse.c
 
 SRC = $(addprefix $(SRC_PATH),$(SRC_NAME))
 OBJ = $(addprefix $(OBJ_PATH),$(OBJ_NAME))
